@@ -1,0 +1,98 @@
+/* La page entiere */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* list-style: none; */
+}
+
+/* En-tete de la page */
+
+header{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 30px;
+    border-bottom: 1px solid;
+    width: 100%;
+    padding: 30px 30px;
+    background: rgba(245, 243, 243, 0.705);
+    display: flex;
+    justify-content:space-between;
+    z-index: 100;
+}
+
+.logo{
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    height: 50px;
+}
+
+#logo{
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul{
+    float: left;
+    list-style-type: none; /* Mieux vaut utiliser celui-ci parce qu'il passe mieux */
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav li{
+    float: left;
+    text-align: center;
+}
+
+nav a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+nav a:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+/* Le corps de la page */
+
+main{
+    position: absolute;
+    top: 11%;
+    background-image: url('./logo/CBD.jpg');
+}
+
+.main-title{
+    text-align: center;
+    font-family: "Century Gotic", Arial, Helvetica, sans-serif;
+}
+
+.cbd{
+    padding: 0px 15% 0px 15%;
+    text-align:justify;
+    font-size: 20px;
+}
+
+
+/* Pieds de page */
+
+footer{
+    position: absolute;
+    top: 90%;
+    padding-top: 15px;
+    border-top: 1px solid;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(98, 94, 110, 0.1);
+}
